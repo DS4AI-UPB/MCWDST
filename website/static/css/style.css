@@ -1,0 +1,136 @@
+body {
+  text-align: center;
+  background-color: #a9f1df;
+  margin: 0px;
+}
+
+.mit-btn-div {
+  padding: 30px 0px;
+}
+
+.container {
+  font-size: 24px;
+}
+
+p {
+  font-size: 26px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+.verdict-h {
+  color: black;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+li {
+  font-size: 30px;
+  padding: 15px 0px;
+}
+
+textarea {
+  background-color: #ffffc7;
+}
+
+.div-pred-res {
+  padding: 0px;
+}
+
+.title-div {
+  padding: 30px 0px;
+}
+
+.main-page-btn {
+  width: 180px;
+  height: 60px;
+  border-radius: 20px;
+}
+
+ol,
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
+
+h1,
+h2,
+li,
+p,
+.container {
+  font-family: "Crimson Pro", serif;
+  margin: 0px;
+  color: #233e8b;
+}
+
+.det-btn-div {
+  margin: 30px 5px;
+}
+
+.detection-body,
+.mitigation-body {
+  text-align: center;
+}
+
+.main-div {
+  padding-top: 200px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.main-h {
+  margin: 30px 0px;
+}
+
+textarea {
+  font-size: 24px;
+}
+
+.aux-p {
+  padding: 40px 20px;
+  display: inline-block;
+}
+
+.ranking-p {
+  padding-top: 25px;
+  font-weight: bold;
+}
+
+.detection-body {
+  background-color: #a9f1df;
+}
+
+.div-verdict {
+  padding: 30px 0px;
+}
+
+.mitigation-body {
+  background-color: #a9f1df;
+  padding-bottom: 30px;
+}
+
+button {
+  background-color: #233e8b;
+  border: 2px solid black;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+textarea {
+  width: 900px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 3px #000;
+  border: 5px solid transparent;
+}
