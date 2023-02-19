@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitigation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+</head>
+<body class="mitigation-body">
+    <div class="mitigation-div">
+        <div class="title-div">
+         <h1>Fake News Mitigation</h1>
+        </div>
+         <p>Insert the structure of the propagation tree.</p>
+         <p>For human-readable format, check the box and use the following format:</p>
+         <p>source->(destination, timestamp)</p>
+         <p>Example: 1->(2,3)</p>
+         <p>For Twitter15 format, leave the checkbox unchecked.</p>
+         <form action="{{ url_for('home_mitigate')}}"method="post">
+           <label class="container">Use human-readable format
+            <input type="checkbox" name="check-format" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <br>
+            <br>
+          <textarea name="mitigation-input" cols="40" rows="5"></textarea>
+            <br>
+      
+            <div class="mit-btn-div">
+              <button type="submit">Submit</button>
+            </div>
+        </form>
+         <img src="{{image_given}}" alt="abc" onerror="this.style.display='none'">
+          <br>
+          <p class="ranking-p">{{ranking_text}}</p>
+          <ol>
+          {% for score in scores %}
+          <li>{{ score }} </li>
+          {% endfor %}
+          </ol>
+       </div>
+</body>
+</html>

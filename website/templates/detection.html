@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+</head>
+<body class="detection-body">
+    
+    <div class="title-div">
+      <h1>Fake News Detection</h1>
+    </div>
+      <p> Type your article below: </p>
+      <br>
+      <form action="{{ url_for('home_predict')}}"method="post">
+        <textarea name="detection-input" cols="40" rows="5"></textarea>
+        <br>
+          <div class="det-btn-div">
+            <button type="submit">Predict</button>
+          </div>
+      </form>
+     <div class="div-pred-res">
+     <h2>Preprocessing steps</h2>
+      <ul>
+        <li>Content<br>{{unedited_content}}</li>
+       <li>Cleaned content<br>{{edited}}</li>
+       <li>Lowered content<br>{{lowered}}</li>
+       <li>Split content<br>{{split}}</li>
+       <li>Lemmatized content and stop words removed<br>{{lemmatized}}</li>
+     </ul>
+    <h2> <p>{{ prediction_text }}</p></h2>
+    </div>
+     <div class="div-verdict">
+     <h2 class="verdict-h"><b>{{verdict}}</b></h2>
+    </div>
+</body>
+</html>

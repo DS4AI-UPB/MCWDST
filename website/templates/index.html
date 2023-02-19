@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Fake news detection and mitigation on Social Media</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <div class="main-div">
+  <h1 class="main-h">Fake news detection and mitigation</h1>
+  <p class="main-p">This site provides a fake news classification page and a fake news mitigation page. 
+    The user can input a news article, and our model will output a probability of it being true, along with a verdict regarding the veradicity of the article.
+    The user can also input a tree-like propagation structure and our model will reveal the 10 most harmful nodes, that have the biggest probability of spreading the news.
+    <br>
+    <br>
+    <b>Disclaimer: </b> The classification result is output by a pre-trained model and should not be taken as ground-truth.
+  </p>
+  <p class="aux-p" align="center"><a href="{{ url_for('detection') }}"><button class="main-page-btn">Let's detect!</button></a></p>
+  <p class="aux-p" align="center"><a href="{{ url_for('mitigation') }}"><button class="main-page-btn">Let's mitigate!</button></a></p>
+</div>
+</body>
+</html>
