@@ -4,7 +4,7 @@ MCWDST: a Minimum-Cost Weighted Directed Spanning Tree for Real-Time Fake News M
 
 ## Article:
 
-Ciprian-Octavian Truică, Elena-Simona Apostol, Cătălin Nicolescu, Panagiotis Karras. *MCWDST: a Minimum-Cost Weighted Directed Spanning Tree for Real-Time Fake News Mitigation in Social Networks*. Arxiv, 2023. Link: [https://arxiv.org/abs/2302.12190](https://arxiv.org/abs/2302.12190)
+Ciprian-Octavian Truică, Elena-Simona Apostol, Radu-Cătălin Nicolescu, Panagiotis Karras. *MCWDST: a Minimum-Cost Weighted Directed Spanning Tree for Real-Time Fake News Mitigation in Social Networks*. Arxiv, 2023. Link: [https://arxiv.org/abs/2302.12190](https://arxiv.org/abs/2302.12190)
 
 ## Folders
 
