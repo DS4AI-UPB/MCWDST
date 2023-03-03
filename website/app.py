@@ -1,3 +1,12 @@
+# coding: utf-8
+
+__author__      = "Radu-Cătălin Nicolescu"
+__copyright__   = "Copyright 2021, University Politehnica of Bucharest"
+__license__     = "GNU GPL"
+__version__     = "0.1"
+__email__       = "radu.nicolescu@stud.acs.upb.ro
+__status__      = "Development"
+
 from copy import deepcopy
 from flask import Flask, request, jsonify, render_template
 import pickle
