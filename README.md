@@ -22,4 +22,4 @@ Packages needed:
 
 ## Utilization
 
-Run: ``python3.7 mcwdst.py``
+Run: ``python3 mcwdst.py``
